@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>专题详情 - 数字中国政策库</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 专题详情头部 -->
+    <header class="topic-detail-header">
+        <div class="header-bg" style="background: linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%);"></div>
+        <div class="header-content">
+            <button class="back-btn-light" onclick="history.back()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                </svg>
+            </button>
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="分享" onclick="showToast('分享功能开发中')">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>
+                    </svg>
+                </button>
+                <button class="icon-btn" aria-label="收藏" onclick="this.classList.toggle('favorited')">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                        <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="topic-intro">
+            <span class="topic-badge">专题</span>
+            <h1>数智底座</h1>
+            <p>数字化基础设施建设与智能技术底座</p>
+            <div class="topic-meta">
+                <span>📚 3个子专题</span>
+                <span>📅 2024-06-10</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 时间轴统计区 -->
+    <section class="timeline-stats">
+        <div class="stats-card">
+            <div class="stat-item">
+                <span class="stat-number">42</span>
+                <span class="stat-label">相关政策</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2020-2024</span>
+                <span class="stat-label">时间跨度</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">8</span>
+                <span class="stat-label">部委发布</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 时间轴内容 -->
+    <main class="topic-detail-content">
+        <div class="timeline-container">
+            <!-- 2024 -->
+            <div class="timeline-year">
+                <div class="year-marker">2024</div>
+                <div class="year-policies">
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">03</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>关于加快构建全国一体化算力网的实施意见</h3>
+                            <p>国家数据局等五部门联合发布，推动算力网络高质量发展</p>
+                            <div class="policy-dept">国家数据局</div>
+                        </div>
+                    </article>
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">02</span>
+                            <span class="day">28</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>人工智能智能化综合标准化体系建设指南</h3>
+                            <p>工信部发布，完善AI标准化体系，推动产业创新发展</p>
+                            <div class="policy-dept">工业和信息化部</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 2023 -->
+            <div class="timeline-year">
+                <div class="year-marker">2023</div>
+                <div class="year-policies">
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">12</span>
+                            <span class="day">20</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>数据要素×三年行动方案</h3>
+                            <p>发挥数据要素乘数效应，推动高质量发展</p>
+                            <div class="policy-dept">国家数据局</div>
+                        </div>
+                    </article>
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">08</span>
+                            <span class="day">10</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>算力基础设施高质量发展行动计划</h3>
+                            <p>提升算力综合供给能力，助力数字经济发展</p>
+                            <div class="policy-dept">工信部等六部门</div>
+                        </div>
+                    </article>
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">05</span>
+                            <span class="day">22</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>关于推进IPv6网络演进发展的指导意见</h3>
+                            <p>加快互联网演进升级，提升网络承载能力</p>
+                            <div class="policy-dept">中央网信办等三部门</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 2022 -->
+            <div class="timeline-year">
+                <div class="year-marker">2022</div>
+                <div class="year-policies">
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">11</span>
+                            <span class="day">05</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>关于构建数据基础制度更好发挥数据要素作用的意见</h3>
+                            <p>"数据二十条"确立数据基础制度体系</p>
+                            <div class="policy-dept">中共中央 国务院</div>
+                        </div>
+                    </article>
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">07</span>
+                            <span class="day">23</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>新型数据中心发展三年行动计划</h3>
+                            <p>推动数据中心绿色化、智能化、高端化发展</p>
+                            <div class="policy-dept">工信部</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 2021 -->
+            <div class="timeline-year">
+                <div class="year-marker">2021</div>
+                <div class="year-policies">
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">10</span>
+                            <span class="day">30</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>全国一体化大数据中心协同创新体系研究</h3>
+                            <p>建设全国一体化大数据中心体系</p>
+                            <div class="policy-dept">国家发展改革委</div>
+                        </div>
+                    </article>
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">03</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>中华人民共和国国民经济和社会发展第十四个五年规划和2035年远景目标纲要</h3>
+                            <p>明确提出加快数字化发展，建设数字中国</p>
+                            <div class="policy-dept">全国人民代表大会</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 2020 -->
+            <div class="timeline-year">
+                <div class="year-marker">2020</div>
+                <div class="year-policies">
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">12</span>
+                            <span class="day">28</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>关于 indépendant 数据安全管理的指导意见</h3>
+                            <p>加强数据安全管理和个人信息保护</p>
+                            <div class="policy-dept">工信部</div>
+                        </div>
+                    </article>
+                    <article class="policy-item" onclick="showToast('查看政策详情')">
+                        <div class="policy-date">
+                            <span class="month">04</span>
+                            <span class="day">10</span>
+                        </div>
+                        <div class="policy-content">
+                            <h3>关于构建更加完善的要素市场化配置体制机制的意见</h3>
+                            <p>首次将数据列为新型生产要素</p>
+                            <div class="policy-dept">中共中央 国务院</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部导航 -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>首页</span>
+        </a>
+        <a href="search.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <span>搜索</span>
+        </a>
+        <a href="favorites.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+            <span>收藏</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+            </svg>
+            <span>我的</span>
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

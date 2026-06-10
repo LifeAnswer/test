@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>搜索 - 数字中国政策库</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部搜索区 -->
+    <header class="search-header">
+        <div class="search-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <input type="search" placeholder="搜索政策、专题、关键词..." id="searchInput" autofocus>
+            <button class="clear-btn" onclick="clearSearch()" style="display: none;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        <button class="cancel-btn" onclick="window.history.back()">取消</button>
+    </header>
+
+    <!-- 搜索内容 -->
+    <main class="search-page">
+        <!-- 搜索历史 -->
+        <section class="search-history" id="historySection" style="display: none;">
+            <div class="section-header">
+                <h3>搜索历史</h3>
+                <button class="clear-history" onclick="clearHistory()">清空</button>
+            </div>
+            <div class="history-tags" id="historyTags">
+                <!-- 历史标签由JS生成 -->
+            </div>
+        </section>
+
+        <!-- 热门搜索 -->
+        <section class="hot-search">
+            <div class="section-header">
+                <h3>热门搜索</h3>
+            </div>
+            <div class="hot-tags">
+                <span class="hot-tag">数字经济</span>
+                <span class="hot-tag">人工智能</span>
+                <span class="hot-tag">数据安全</span>
+                <span class="hot-tag">智慧城市</span>
+                <span class="hot-tag">数字政府</span>
+                <span class="hot-tag">5G网络</span>
+                <span class="hot-tag">区块链</span>
+                <span class="hot-tag">云计算</span>
+            </div>
+        </section>
+
+        <!-- 搜索建议（动态显示） -->
+        <section class="search-suggestions" id="suggestionsSection" style="display: none;">
+            <ul id="suggestionsList">
+                <!-- 建议由JS动态填充 -->
+            </ul>
+        </section>
+
+        <!-- 搜索结果（默认隐藏） -->
+        <section class="search-results" id="resultsSection" style="display: none;">
+            <div class="results-header">
+                <span id="resultsCount">找到 0 条结果</span>
+                <div class="sort-options">
+                    <button class="sort-btn active" data-sort="relevance">相关性</button>
+                    <button class="sort-btn" data-sort="date">时间</button>
+                </div>
+            </div>
+            <div class="results-list" id="resultsList">
+                <!-- 结果由JS填充 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部导航 -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>首页</span>
+        </a>
+        <a href="search.html" class="nav-item active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <span>搜索</span>
+        </a>
+        <a href="favorites.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+            <span>收藏</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+            </svg>
+            <span>我的</span>
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

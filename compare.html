@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>政策对比 - 数字中国政策库</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部标题区 -->
+    <header class="app-header">
+        <div class="header-top">
+            <h1 class="main-title">政策对比</h1>
+            <p class="sub-title">多维度政策分析对比</p>
+        </div>
+    </header>
+
+    <!-- 对比设置区 -->
+    <div class="compare-setup">
+        <h3>选择对比维度</h3>
+        <div class="dimension-grid">
+            <label class="dimension-item">
+                <input type="checkbox" checked disabled>
+                <span class="dimension-name">政策名称</span>
+            </label>
+            <label class="dimension-item">
+                <input type="checkbox" checked>
+                <span class="dimension-name">发布时间</span>
+            </label>
+            <label class="dimension-item">
+                <input type="checkbox" checked>
+                <span class="dimension-name">发布机构</span>
+            </label>
+            <label class="dimension-item">
+                <input type="checkbox">
+                <span class="dimension-name">核心内容</span>
+            </label>
+            <label class="dimension-item">
+                <input type="checkbox">
+                <span class="dimension-name">适用范围</span>
+            </label>
+            <label class="dimension-item">
+                <input type="checkbox">
+                <span class="dimension-name">关键指标</span>
+            </label>
+        </div>
+        <button class="compare-action-btn" onclick="startCompare()">开始对比</button>
+    </div>
+
+    <!-- 对比内容区 -->
+    <main class="compare-page">
+        <!-- 示例对比表格 -->
+        <div class="compare-table-wrapper">
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th class="dimension-col">对比维度</th>
+                        <th class="policy-col">
+                            <div class="policy-header">
+                                <span class="policy-name">数据要素×三年行动方案</span>
+                                <span class="policy-date">2023-12</span>
+                            </div>
+                        </th>
+                        <th class="policy-col">
+                            <div class="policy-header">
+                                <span class="policy-name">关于构建数据基础制度更好发挥数据要素作用的意见</span>
+                                <span class="policy-date">2022-11</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="dimension-label">发布机构</td>
+                        <td class="compare-value">
+                            <div class="dept-tag blue">国家数据局</div>
+                        </td>
+                        <td class="compare-value">
+                            <div class="dept-tag red">中共中央 国务院</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-label">政策类型</td>
+                        <td class="compare-value">实施方案</td>
+                        <td class="compare-value">意见</td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-label">核心目标</td>
+                        <td class="compare-value">发挥数据要素乘数效应，推动高质量发展</td>
+                        <td class="compare-value">构建数据基础制度，建立数据产权等三项制度</td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-label">主要内容</td>
+                        <td class="compare-value">
+                            <ul class="feature-list">
+                                <li>数据产权分置运行</li>
+                                <li>数据流通交易</li>
+                                <li>数据收益分配</li>
+                                <li>数据安全治理</li>
+                            </ul>
+                        </td>
+                        <td class="compare-value">
+                            <ul class="feature-list">
+                                <li>数据产权制度改革</li>
+                                <li>数据流通交易体系</li>
+                                <li>数据收益分配机制</li>
+                                <li>数据安全治理框架</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-label">实施周期</td>
+                        <td class="compare-value">2023-2025年（3年）</td>
+                        <td class="compare-value">长期制度性文件</td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-label">覆盖范围</td>
+                        <td class="compare-value">全国范围</td>
+                        <td class="compare-value">全国范围</td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-label">关键指标</td>
+                        <td class="compare-value">
+                            <span class="metric">数据交易规模增长50%</span>
+                        </td>
+                        <td class="compare-value">
+                            <span class="metric">建立数据产权等三项制度</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dimension-label">政策衔接</td>
+                        <td class="compare-value">
+                            <div class="relation-badge success">完善落实</div>
+                        </td>
+                        <td class="compare-value">
+                            <div class="relation-badge parent">上位文件</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 对比分析 -->
+        <section class="compare-analysis">
+            <h3>对比分析摘要</h3>
+            <div class="analysis-card">
+                <h4>政策层级</h4>
+                <p>《意见》（2022-11）由中共中央、国务院联合发布，属于顶层制度设计；《行动方案》（2023-12）由国家数据局等部门制定，是具体实施方案。二者形成"顶层设计+实施细则"的政策体系。</p>
+            </div>
+            <div class="analysis-card">
+                <h4>时间衔接</h4>
+                <p>两项政策发布时间间隔约13个月，体现了"先立制度、后推实施"的政策制定逻辑。《意见》构建了数据基础制度的"四梁八柱"，《行动方案》则明确了三年期的具体工作路径。</p>
+            </div>
+            <div class="analysis-card">
+                <h4>重点差异</h4>
+                <p>《意见》侧重于产权、流通、分配、安全四项制度的框架性表述；《行动方案》更具体，提出了数据交易规模增长50%等量化指标，更具操作性和可评估性。</p>
+            </div>
+        </section>
+
+        <!-- 重新对比 -->
+        <div class="compare-actions">
+            <button class="secondary-btn" onclick="showToast('请选择其他政策进行对比')">选择其他政策对比</button>
+        </div>
+    </main>
+
+    <!-- 底部导航 -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>首页</span>
+        </a>
+        <a href="search.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <span>搜索</span>
+        </a>
+        <a href="favorites.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+            <span>收藏</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+            </svg>
+            <span>我的</span>
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>专题栏目 - 数字中国政策库</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部标题区 -->
+    <header class="app-header">
+        <button class="back-btn" onclick="history.back()">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+        </button>
+        <div class="header-center">
+            <h1 class="page-title">专题栏目</h1>
+        </div>
+        <button class="menu-btn" aria-label="搜索" onclick="window.location.href='search.html'">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+        </button>
+    </header>
+
+    <!-- 专题页面 -->
+    <main class="topics-page">
+        <!-- 综合指引 -->
+        <section class="topic-section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-title-row">
+                    <h2 class="section-title">综合指引</h2>
+                    <span class="section-count">3</span>
+                </div>
+                <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+            </div>
+            <div class="section-content">
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=guide'">
+                    <div class="topic-number">01</div>
+                    <div class="topic-info">
+                        <h3>国家数字化总体框架</h3>
+                        <p>数字中国建设的整体规划与顶层设计</p>
+                        <span class="topic-tag">综合</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=guide'">
+                    <div class="topic-number">02</div>
+                    <div class="topic-info">
+                        <h3>数字化发展指标体系</h3>
+                        <p>评估数字化水平的指标体系与标准</p>
+                        <span class="topic-tag">标准</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=guide'">
+                    <div class="topic-number">03</div>
+                    <div class="topic-info">
+                        <h3>政策解读与实施指南</h3>
+                        <p>政策文件的官方解读和执行指导</p>
+                        <span class="topic-tag">解读</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+            </div>
+        </section>
+
+        <!-- 数智底座 -->
+        <section class="topic-section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-title-row">
+                    <h2 class="section-title">数智底座</h2>
+                    <span class="section-count">3</span>
+                </div>
+                <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+            </div>
+            <div class="section-content">
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=ai'">
+                    <div class="topic-number">01</div>
+                    <div class="topic-info">
+                        <h3>人工智能发展政策</h3>
+                        <p>AI产业发展规划与技术标准</p>
+                        <span class="topic-tag">AI</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=data'">
+                    <div class="topic-number">02</div>
+                    <div class="topic-info">
+                        <h3>数据要素市场化</h3>
+                        <p>数据产权、流通与收益分配政策</p>
+                        <span class="topic-tag">数据</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=infra'">
+                    <div class="topic-number">03</div>
+                    <div class="topic-info">
+                        <h3>新型基础设施政策</h3>
+                        <p>5G、数据中心、云计算等基础设施建设</p>
+                        <span class="topic-tag">基建</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+            </div>
+        </section>
+
+        <!-- 发展赋能 -->
+        <section class="topic-section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-title-row">
+                    <h2 class="section-title">发展赋能</h2>
+                    <span class="section-count">5</span>
+                </div>
+                <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+            </div>
+            <div class="section-content">
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=deconomy'">
+                    <div class="topic-number">01</div>
+                    <div class="topic-info">
+                        <h3>数字经济发展</h3>
+                        <p>数字经济核心产业扶持政策</p>
+                        <span class="topic-tag">经济</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=dgov'">
+                    <div class="topic-number">02</div>
+                    <div class="topic-info">
+                        <h3>数字政府建设</h3>
+                        <p>政务数字化与服务创新政策</p>
+                        <span class="topic-tag">政府</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=dsociety'">
+                    <div class="topic-number">03</div>
+                    <div class="topic-info">
+                        <h3>数字社会建设</h3>
+                        <p>智慧城市、数字乡村政策</p>
+                        <span class="topic-tag">社会</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=dculture'">
+                    <div class="topic-number">04</div>
+                    <div class="topic-info">
+                        <h3>数字文化发展</h3>
+                        <p>数字文化产业发展与知识产权</p>
+                        <span class="topic-tag">文化</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=eco'">
+                    <div class="topic-number">05</div>
+                    <div class="topic-info">
+                        <h3>数字生态文明</h3>
+                        <p>数字化助力环境保护与绿色发展</p>
+                        <span class="topic-tag">生态</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+            </div>
+        </section>
+
+        <!-- 支撑保障 -->
+        <section class="topic-section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <div class="section-title-row">
+                    <h2 class="section-title">支撑保障</h2>
+                    <span class="section-count">4</span>
+                </div>
+                <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+            </div>
+            <div class="section-content">
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=security'">
+                    <div class="topic-number">01</div>
+                    <div class="topic-info">
+                        <h3>数智安全</h3>
+                        <p>网络安全、数据安全与隐私保护</p>
+                        <span class="topic-tag">安全</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=talent'">
+                    <div class="topic-number">02</div>
+                    <div class="topic-info">
+                        <h3>科创人才培养</h3>
+                        <p>数字化人才培养与引进政策</p>
+                        <span class="topic-tag">人才</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=cooperation'">
+                    <div class="topic-number">03</div>
+                    <div class="topic-info">
+                        <h3>区域合作</h3>
+                        <p>跨区域数字化协同发展政策</p>
+                        <span class="topic-tag">合作</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+                <article class="topic-item" onclick="location.href='topic-detail.html?category=openness'">
+                    <div class="topic-number">04</div>
+                    <div class="topic-info">
+                        <h3>对外开放</h3>
+                        <p>数字领域国际合作与贸易政策</p>
+                        <span class="topic-tag">国际</span>
+                    </div>
+                    <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- 底部导航栏 -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>首页</span>
+        </a>
+        <a href="search.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <span>搜索</span>
+        </a>
+        <a href="favorites.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+            <span>收藏</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+            </svg>
+            <span>我的</span>
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

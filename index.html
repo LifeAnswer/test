@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>数字中国政策库 - 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部标题区 -->
+    <header class="app-header">
+        <div class="header-top">
+            <h1 class="main-title">数字中国政策库</h1>
+            <p class="sub-title">国家数字化发展政策整合平台</p>
+        </div>
+    </header>
+
+    <!-- 首页内容 -->
+    <main class="home-page">
+        <!-- 四个分页按钮 -->
+        <section class="function-grid">
+            <a href="latest.html" class="function-card" style="--card-color: #1e40af;">
+                <div class="card-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <h3>最新</h3>
+                <p>最新发布政策</p>
+            </a>
+
+            <a href="topics.html" class="function-card" style="--card-color: #0ea5e9;">
+                <div class="card-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                    </svg>
+                </div>
+                <h3>专题</h3>
+                <p>分类专题导航</p>
+            </a>
+
+            <a href="timeline.html" class="function-card" style="--card-color: #0891b2;">
+                <div class="card-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                    </svg>
+                </div>
+                <h3>时间轴</h3>
+                <p>政策时间线</p>
+            </a>
+
+            <a href="compare.html" class="function-card" style="--card-color: #059669;">
+                <div class="card-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+                        <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/>
+                    </svg>
+                </div>
+                <h3>政策对比</h3>
+                <p>多维度对比</p>
+            </a>
+        </section>
+    </main>
+
+    <!-- 底部导航栏 -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item active" data-page="home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            </svg>
+            <span>首页</span>
+        </a>
+        <a href="search.html" class="nav-item" data-page="search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <span>搜索</span>
+        </a>
+        <a href="favorites.html" class="nav-item" data-page="favorites">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
+            </svg>
+            <span>收藏</span>
+        </a>
+        <a href="profile.html" class="nav-item" data-page="profile">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+            </svg>
+            <span>我的</span>
+        </a>
+    </nav>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
